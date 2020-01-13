@@ -1,21 +1,23 @@
 public class simpleCalculator {
+    // the main method prints out both methods to the console depending the preference of the user which method he or she likes.
     public static void main(String[] args) {
-        System.out.println(Addition(1,2));
-        System.out.println(Multiple(1,3));
+        System.out.println(Add(1,2));
+        System.out.println(Multiply(1,3));
 
     }
-    public static int Addition(int...sum){
+    // this method adds an unlimted number of integers(int...sum).
+    public static int Add(int...sum){
         int number = 0;
-        for(int a: sum){
-            number += a;
+        for(int output: sum){
+            number += output;
         }
         return number;
     }
-    public static int Multiple(int...sum){
+    //this method multiplies an unlimited numbers of integers(int...sum).
+    public static int Multiply(int...sum){
         int number = 1;
         for (int num:sum) {
             number *= num;
-
         }
         return number;
     }
