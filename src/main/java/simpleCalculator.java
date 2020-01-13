@@ -5,7 +5,7 @@ public class simpleCalculator {
         System.out.println(Multiply(1,3));
 
     }
-    // this method adds an unlimted number of integers(int...sum).
+    // this method adds an unlimited number of integers(int...sum).
     public static int Add(int...sum){
         int number = 0;
         for(int output: sum){
